@@ -1,7 +1,9 @@
-(function($){})(window.jQuery);
-
-$(document).ready(function (){
-
-	
-
-});
+(function( $ ) {
+    "use strict";
+ 
+    $(function() {
+ 
+        // get crakcing
+ 
+    });
+}(jQuery));
