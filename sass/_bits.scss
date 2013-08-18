@@ -1,0 +1,57 @@
+/* ==============================================================
+		colours
+============================================================== */
+
+$primaryColor: #333;
+$secondaryColor: #333;
+
+/* ==============================================================
+		fonts
+============================================================== */
+
+@mixin font-size($sizeValue: 14) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem;
+}
+
+@mixin p {
+	font-family: Arial, sans-serif; 
+}
+
+@mixin heading {
+	font-family: Arial, sans-serif; 
+}
+
+@mixin meta {
+	font-family: Arial, sans-serif; 
+}
+
+/* ==============================================================
+		responsive
+============================================================== */
+
+@mixin break($point) {
+	@if $point == laptop {
+		@media (max-width: 1100px) { @content; }
+	}
+	@else if $point == tablet {
+		@media (max-width: 900px) { @content; }
+	}
+	@else if $point == phone {
+		@media (max-width: 480px)  { @content; }
+	}
+}
+
+// Custom Breakpoint
+@mixin custombreak($point) {
+    @media all and (max-width: $point) { @content; }
+}
+
+/* ==============================================================
+		grid settings
+============================================================== */
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
