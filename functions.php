@@ -12,5 +12,4 @@ include('functions/sidebars.php');
 include('functions/comments.php');
 
 // additional functionality
-// custom comment layout
 include('functions/misc.php');

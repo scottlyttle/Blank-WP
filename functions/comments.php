@@ -1,6 +1,6 @@
 <?php
 // Custom Comments List
-function frankiewp_comment($comment, $args, $depth) {
+function blankwp_comment($comment, $args, $depth) {
 $GLOBALS['comment'] = $comment; ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 	<div id="comment-<?php comment_ID(); ?>">

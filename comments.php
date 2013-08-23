@@ -17,7 +17,7 @@ if ( post_password_required() ) { ?>
 	</div>
 
 	<ol class="commentlist">
-		<?php wp_list_comments('type=comment&callback=frankiewp_comment'); ?>
+		<?php wp_list_comments('type=comment&callback=blankwp_comment'); ?>
 	</ol>
 
 	<div class="navigation">

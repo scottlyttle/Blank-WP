@@ -1,21 +1,21 @@
 <?php
 if ( ! function_exists( 'blankwp_setup' ) ) :
-function frankiewp_setup() {
-	//Enable support for Post Thumbnails
-	add_theme_support( 'post-thumbnails' );
+	function frankiewp_setup() {
+		//Enable support for Post Thumbnails
+		add_theme_support( 'post-thumbnails' );
 
-	//This theme uses wp_nav_menu() in one location
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'blankwp' ),
-	) );
+		// This theme uses wp_nav_menu() in one location
+		register_nav_menus( array(
+			'primary' => __( 'Primary Menu', 'blankwp' ),
+		) );
 
-	//Enable support for Post Formats
-	//add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-}
+		//Enable support for Post Formats
+		add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	}
 endif;
 add_action( 'after_setup_theme', 'blankwp_setup' );
 
-// Clear out the head links. Optionally re-enable these
+// Clear out the head links. Optionally re-enable these by commenting out the applicable line
 function removeHeadLinks() {
 	remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
 	remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed

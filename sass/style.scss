@@ -2,23 +2,25 @@
 Theme Name: Theme Name
 Theme URI: http://website.com.au
 Description: Custom Theme for Company Name
-Author: Scott Lyttle
-Author URI: http://lyttle.co
+Author: Author Name
+Author URI: http://authorswebsite.com
 Version: 1.0
 */
 
-// Bringing in the functions
+// Bringing in the compass and grid functions
 @import "compass/css3";
 @import "susy";
 
 // Resets and Defaults
 @import "reset";
-//@import "wordpress";
+@import "wordpress";
 
 // Bits and Bobs
 @import "bits";
+@import "typography";
 @import "icons";
 
 // Theme Styles
 @import "global";
 @import "header";
+@import "footer";
