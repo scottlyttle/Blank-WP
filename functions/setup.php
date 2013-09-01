@@ -1,19 +1,19 @@
 <?php
-if ( ! function_exists( 'blankwp_setup' ) ) :
+if ( ! function_exists( 'yabtfw_setup' ) ) :
 	function frankiewp_setup() {
 		//Enable support for Post Thumbnails
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location
 		register_nav_menus( array(
-			'primary' => __( 'Primary Menu', 'blankwp' ),
+			'primary' => __( 'Primary Menu', 'yabtfw' ),
 		) );
 
 		//Enable support for Post Formats
 		add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 	}
 endif;
-add_action( 'after_setup_theme', 'blankwp_setup' );
+add_action( 'after_setup_theme', 'yabtfw_setup' );
 
 // Clear out the head links. Optionally re-enable these by commenting out the applicable line
 function removeHeadLinks() {

@@ -1,6 +1,6 @@
 <?php
 // Load other custom scripts
-function blankwp_scripts() {
+function yabtfw_scripts() {
 	// Use WordPress's version of WordPress
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'));
@@ -9,4 +9,4 @@ function blankwp_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'blankwp_scripts' );
+add_action( 'wp_enqueue_scripts', 'yabtfw_scripts' );

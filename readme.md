@@ -1,8 +1,8 @@
-# Blank WP
+# Yet Another Base Theme for WordPress (YABTFW)
 
 A base HTML5 and SCSS theme for WordPress, with all the trimmings, but none of the fat.
 
-### Features of Blank WP
+### Features of YABTFW
 
 - HTML5 code base
 - Responsive base including [Susy](http://susy.oddbird.net/)
@@ -19,4 +19,4 @@ A base HTML5 and SCSS theme for WordPress, with all the trimmings, but none of t
 - Asynchronous Google Analytics script in place (just edit the ID)
 - Not much else.
 
-To personalise the theme you should only need to do a find & replace for the term 'blankwp' and replace with your own theme name (in the functions)
+To personalise the theme you should only need to do a find & replace for the term 'yabtfw' and replace with your own theme name (in the functions)
