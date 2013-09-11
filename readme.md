@@ -2,6 +2,8 @@
 
 A base HTML5 and SCSS theme for WordPress, with all the trimmings, but none of the fat.
 
+**Note:** YABTFW requires you to have the [Susy gem installed](http://susy.oddbird.net/guides/getting-started/)
+
 ### Features of YABTFW
 
 - HTML5 code base
